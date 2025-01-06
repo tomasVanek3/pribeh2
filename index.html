@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="app.js"></script>
+    <title>Pribeh</title>
+</head>
+<body>
+    <div id="pribeh" class="strana_viditelna">
+        <h1>Příběh</h1>
+        <div id="texty">
+            <h3 id="start">Začátek</h3>
+            <div id="text1">
+
+            </div>
+            <h3 id="mid">Zvrat</h3>
+            <div id="text2">
+
+            </div>
+            <h3 id="end">Závěr</h3>
+            <div id="text3">
+
+            </div>
+        </div>
+        <button type="button" onclick="nastaveni()" id="tlac1">Nastavení</button>
+        <div>
+            <p id="error">
+                
+            </p>
+        </div>
+    </div>
+    <div id="nastaveni" class="strana_vypnuta">
+        <h1>Nastavení</h1>
+        <div>
+            <h3>Začátek</h3>
+            <form>
+                <input type="text" id="vstup1" placeholder="Zadej text">
+            </form>
+            <h3>Zvrat</h3>
+            <form>
+                <input type="text" id="vstup2" placeholder="Zadej text">
+            </form>
+            <h3>Závěr</h3>
+            <form>
+                <input type="text" id="vstup3" placeholder="Zadej text">
+            </form>
+            <br>
+            <br>
+            <form>
+                <button type="button" onclick="zpet()">Zpět</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
